@@ -1,0 +1,7 @@
+.verse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border: 1px solid #000;
+}
