@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-const Verse = ({verse}) => {
+const Verse = ({verse, content}) => {
     const [isVerseRevealed, setIsVerseRevealed] = React.useState(false);
 
     const handleClick = () => {
@@ -10,11 +10,10 @@ const Verse = ({verse}) => {
 
     return (
         <>
-        <button onClick={handleClick}>Toggle</button>
         {isVerseRevealed ? 
-        <div className={styles.verse}>
-            {verse}
-        </div> : <div>Matthew 5:28</div>}
+        <button onClick={handleClick} className={styles.verse}>
+            {content}
+        </button> : <button onClick={handleClick}>{verse}</button>}
         </>
     )
 };
