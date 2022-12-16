@@ -9,12 +9,12 @@ const Verse = ({verse, content}) => {
     }
 
     return (
-        <>
-        {isVerseRevealed ? 
-        <button onClick={handleClick} className={styles.verse}>
-            {content}
-        </button> : <button onClick={handleClick}>{verse}</button>}
-        </>
+        <div>
+            {isVerseRevealed ? 
+            <button onClick={handleClick} className={styles.verse}>
+                {content}
+            </button> : <button onClick={handleClick}>{verse}</button>}
+        </div>
     )
 };
 
