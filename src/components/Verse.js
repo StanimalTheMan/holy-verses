@@ -22,7 +22,7 @@ const Verse = ({book, chapter, verses, content}) => {
     }
     return (
         <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea onClick={handleClick}>
+            <CardActionArea data-testid="verse" onClick={handleClick}>
                 <CardContent>
                     {isVerseRevealed ? 
                         <Typography variant="body2" color="text.secondary">
